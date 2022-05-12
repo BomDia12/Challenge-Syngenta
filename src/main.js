@@ -12,7 +12,7 @@ function descontructInput (input) {
 
 /**
  * @param {string} date the date string with the weekday inbetween paranthesis
-    * @returns {string} the weekday of the selected date
+ * @returns {string} the weekday of the selected date
  */
 function getWeekdayFromDate (date) {
     return date.substring(
@@ -34,7 +34,6 @@ function isWeekend (weekday) {
 }
 
 /**
- * 
  * @param {string} input the input with the client type and the dates of the stay
  * @returns {object} object with the type of client (`string`) and an array of whether
  * each day of the stay is a weekend or not
@@ -156,6 +155,10 @@ function lakewoodPrice (type, weekends) {
     )
 }
 
+/**
+ * @param {string} input string with the type of the client followed by the dates of their stay
+ * @returns {string} the name of the hotel with the chepest prices and, in case of a tie, the highest rating
+ */
 function getCheapestHotel (input) { //DO NOT change the function's name.
     const {type, weekends} = processData(input);
 
